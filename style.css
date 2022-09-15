@@ -1,0 +1,537 @@
+/*
+Theme Name: Three Thousand
+Theme URI: localhost/wordpress-5.7/wordpress/wp-content/themes/threethousand/
+Author: Marco Zintl
+Description: A WordPress theme
+Version: 1.0
+*/
+/* Mobil */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 90%;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+#page-wrapper {
+    min-height: 100vh;
+    position: relative;
+    display: block;
+    padding-bottom: 143px;
+    background-color: rgba(177, 252, 106, 0.5);
+    border: 1px solid #707070;
+}
+#logo-desktop {
+    display: none;
+}
+#logo-mobile {
+    width: 75%;
+    margin-left: 1%;
+    order: 1;
+}
+#search {
+    width: 8%;
+    min-width: 30px;
+    order: 2;
+    margin-top: 6px;
+}
+#mobile-nav {
+    width: 15%;
+    min-width: 50px;
+    margin-right: 1%;
+    order: 3;
+    margin-top: 5px;
+}
+header {
+    width: 100%;
+    height: 45px;
+    background-image: url("bilder/header/header-mobil.jpg");
+    position: fixed;
+    top: 0;
+    display: flex;
+}
+#main-nav {
+    width: 100%;
+    background-image: url("bilder/header/hamburger-menu.jpg");
+    display: none;
+}
+.subnav {
+    width: 100%;
+    border: 1px dashed #707070;
+    margin: 0 auto;
+    margin-top: 42px;
+}
+#main-nav > ul, .subnav nav > ul {
+    width: 60px;
+    margin: 6px auto;
+}
+#main-nav ul > li, .subnav nav ul > li {
+    list-style-type: none;
+    padding: 3.5px 0;
+}
+#main-nav ul li > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.subnav nav ul li > a {
+    text-decoration: none;
+    font-weight: bold;
+}
+#main-nav li > a:hover {
+    color: black;
+}
+#search-box {
+    font-family: inherit;
+    padding: 3px 7px;
+    width: 109px;
+    border-radius: 15px;
+    display: none;
+    border: 1px solid #707070;
+}
+#header-image {
+    background-image: url("bilder/header/header-image-mobil.jpg");
+    height: 243px;
+    padding-top: 168px;
+    margin-top: 43px;
+}
+#welcome {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;
+    width: 56%;
+    margin: 0 auto;
+    max-width: 240px;
+}
+#content-wrapper, .post-wrapper {
+    overflow: auto;
+}
+section {
+    width: 83%;
+    background-color: white;
+    margin: 18px auto;
+    padding-top: 9px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    overflow: auto;
+    border: 1px solid #707070;
+}
+#sidebar-primary {
+    width: 83%;
+    margin: 18px auto;
+    margin-bottom: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: auto;
+    border: none;
+    background-color: rgba(177, 252, 106, 0);
+}
+form {
+    width: 94%;
+    margin: 0 auto;
+}
+.short-text {
+    margin-bottom: 15px;
+}
+.left-column, .right-column {
+    width: 94%;
+    margin: 0 auto;
+}
+.post-content {
+    width: 94%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.post-content > p {
+    margin-bottom: 10px;
+}
+.subnav {
+    width: 94%;
+}
+.article-headings {
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #587D34;
+    margin-bottom: 5px;
+}
+.h1-home {
+    width: 94%;
+    font-size: 1.4em;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.read-more {
+    color: black;
+    font-weight: bold;
+}
+.date {
+    font-size: 0.85em;
+    font-style: italic;
+    margin-top: 5px;
+}
+#more-news {
+    width: 94%;
+    margin: 0 auto;
+}
+#more-news > a {
+    font-weight: bold;
+    color: black;
+}
+form div > input {
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: inherit;
+    padding: 5px;
+}
+form div > textarea {
+    font-family: inherit;
+    font-size: inherit;
+    width: 100%;
+    height: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+button {
+    width: 100%;
+    height: 40px;
+    background-color: #4CAF50;
+    border: none;
+}
+#clear {
+    margin-bottom: 5px;
+}
+#submit {
+    margin-top: 5px;
+}
+button:hover {
+    color: white;
+}
+.first-paragraph {
+    padding-bottom: 7.5px;
+}
+.second-paragraph {
+    padding-top: 7.5px;
+    padding-bottom: 5px;
+}
+.first-paragraph-about {
+    padding-bottom: 7.5px;
+}
+.second-paragraph-about {
+    padding: 7.5px 0;
+}
+.third-paragraph-about {
+    padding-top: 7.5px;
+}
+#consent {
+   margin: 10px auto;
+   overflow: auto;
+}
+#checkbox {
+    width: 15px;
+    float: left;
+}
+#consent > label {
+    width: 93%;
+    float: right;
+}
+.content-images-mobile, .content-images-mobile > img {
+    width: 100%;
+    height: auto;
+    max-height: 223px;
+}
+.content-images-desktop, .content-images-desktop > img {
+    display: none;
+}
+article {
+    overflow: auto;
+    margin-bottom: 20px;
+}
+textarea {
+    height: 200px;
+}
+.h1-articles {
+    width: 94%;
+    font-size: 1.4em;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+#h1-form {
+    width: 94%;
+    font-size: 1.4em;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+footer {
+    width: 100%;
+    height: 143px;
+    background-color: #90CC56;
+    overflow: auto;
+    position: absolute;
+    bottom: 0;
+    border: 1px solid #707070;
+}
+#footer-content {
+    width: 29%;
+    margin: 10px auto;
+    list-style-type: none;
+}
+.email-link {
+    color: black;
+}
+.widget {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #707070;
+    background-color: white;
+    min-height: 300px;
+}
+.content > p {
+    margin-bottom: 10px;
+}
+/* Surfplatta */
+@media only screen and (min-width: 429px) and (max-width: 899px) {
+    header {
+        background-image: url("bilder/header/header-tablet.jpg");
+    }
+    #header-image {
+        background-image: url("bilder/header/header-image-tablet.jpg");
+    }
+    #logo-mobile {
+        width: 79%;
+        margin-left: 5%;
+    }
+    #main-nav {
+        background-image: url("bilder/header/hamburger-menu-tablet.jpg");
+    }
+    #mobile-nav {
+        width: 6%;
+        max-width: 50px;
+        margin-right: 4%;
+    }
+    #search {
+        width: 7%;
+    }
+    section, #sidebar-primary {
+        max-width: 460px;
+    }
+    .content-images-mobile, .content-images-mobile > img {
+        display: none;
+    }
+    .content-images-desktop, .content-images-desktop > img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 248px;
+    }
+    #footer-content {
+        max-width: 125px;
+    }
+}
+/* Desktop */
+@media only screen and (min-width: 900px) {
+    #page-wrapper {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-bottom: 60px;
+    }
+    #logo-mobile {
+        display: none;
+    }
+    #logo-desktop {
+        width: 33%;
+        max-width: 540px;
+        display: block;
+        order: 1;
+        margin-left: 8.5%;
+        margin-right: 12%;
+    }
+    #mobile-nav {
+        display: none;
+    }
+    header {
+        max-width: 1200px;
+        height: 60px;
+        background-image: url("bilder/header/header-desktop.jpg");
+    }
+    #header-image {
+        background-image: url("bilder/header/header-image-desktop.jpg");
+        height: 240px;
+        margin-top: 59px;
+    }
+    #search {
+        width: 13%;
+        min-width: 141px;
+        margin-top: 17px;
+        order: 2;
+        overflow: auto;
+    } 
+    #search-box {
+        width: 109px;
+        height: 23px;
+        display: block;
+        float: left;
+    }
+    #search-icon {
+        width: 30px;
+        float: right;
+    }
+    #subnav-right {
+        width: 30%;
+        float: right;
+        margin-right: 3%;
+        margin-left: 1%;
+    }
+    #subnav-left {
+        width: 30%;
+        float: left;
+        margin-left: 3%;
+        margin-right: 1%;
+    }
+    #main-nav {
+        display: inline-block;
+        width: 27%;
+        max-width: 270px;
+        background-image: none;
+        order: 4;
+        margin-right: 8.5%;
+        margin-top: 17px;
+        background-image: none;
+    }
+    #main-nav > ul {
+        width: 100%;
+        max-width: 245px;
+        margin-top: 0;
+        margin-bottom: 0;
+        float: right;
+    }
+    #main-nav ul > li {
+        display: inline-block;
+        padding-left: 4%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .left-column {
+        width: 46%;
+        max-width: 440px;
+        float: left;
+        margin-left: 3%;
+        margin-right: 1%;
+    }
+    .right-column {
+        width: 46%;
+        max-width: 440px;
+        float: right;
+        margin-left: 1%;
+        margin-right: 3%;
+    }
+    .row {
+        width: 100%;
+        overflow: auto;
+    }
+    h1 {
+        width: 94%;
+        max-width: 902px;
+        margin: 0 auto;
+    }
+    section, #sidebar-primary {
+        max-width: 960px;
+    }
+    #form {
+        max-width: 465px;
+    }
+    #h1-form, form {
+        max-width: 415px;
+    }
+    textarea {
+        height: 150px;
+    }
+    .left-column-contact, .right-column-contact {
+        width: 49%;
+        max-width: 200px;
+    }
+    .left-column-contact {
+        float: left;
+    }
+    .right-column-contact {
+        float: right;
+    }
+    .content-images-mobile, .content-images-mobile > img {
+        display: none;
+    }
+    .content-images-desktop, .content-images-desktop > img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .h1-articles {
+        margin-bottom: 15px;
+    }
+    .third-paragraph-about {
+        padding-top: 5px;
+    }
+    .date {
+        margin-top: 5px;
+    }
+    .post {
+        column-count: 2;
+        column-gap: 2%;
+    }
+    #post-content-left {
+        width: 62%;
+        float: left;
+        margin-left: 3%;
+        margin-right: 1%;
+    }
+    #post-content-right {
+        width: 62%;
+        float: right;
+        margin-right: 3%;
+        margin-left: 1%;
+    }
+    .widget {
+        width: 33.3%;
+        float: left;
+    }
+    #h1-left {
+        width: 62.5%;
+        float: left;
+        margin-left: 3%;
+    }
+    #h1-right {
+        width: 62.5%;
+        float: right;
+        margin-right: 3%;
+    }
+    footer {
+        height: 60px;
+    }
+    #footer-content {
+        width: 59%;
+        max-width: 525px;
+        margin-top: 20px;
+    }
+    #footer-content > li {
+        display: inline-block;
+    }
+    .address, .phone {
+        border-right: 1.5px solid black;
+        padding-right: 5px;
+    }
+    section, #sidebar-primary {
+        padding-top: 15px;
+    }
+    .post-content {
+        margin-top: 0;
+    }
+    .content {
+        margin-bottom: 0;
+    }
+    .thumbnail-desktop-one-column > img {
+        max-width: 440px;
+        max-height: 248px;
+    }
+}
